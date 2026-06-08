@@ -1,3 +1,5 @@
+const prompt = require('readline-sync').question;
+
 /* Ejercicios con WHILE
 Mostrar los números del 1 al 10 usando while.
 Mostrar los números del 10 al 1 usando while.
@@ -40,12 +42,20 @@ while (numero < 20)
 }  */
 
    //Sumar los números del 1 al 50
-    let numero=0;
+    /* let numero=0;
    let suma=0;
 while (numero < 50) 
     {
         numero++;
      suma+=numero;
     }
-    console.log("la suma de los numeros es ", suma); 
+    console.log("la suma de los numeros es ", suma);  */
     
+//Pedir números al usuario hasta que introduzca un 0
+let numeroUsuario;
+
+do {
+    numeroUsuario = parseInt(prompt("Inserte un numero"));
+} while (numeroUsuario != 0);
+
+console.log("Ha introducido un cero");
