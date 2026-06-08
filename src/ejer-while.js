@@ -52,10 +52,28 @@ while (numero < 50)
     console.log("la suma de los numeros es ", suma);  */
     
 //Pedir números al usuario hasta que introduzca un 0
-let numeroUsuario;
+/* let numeroUsuario;
 
 do {
     numeroUsuario = parseInt(prompt("Inserte un numero"));
 } while (numeroUsuario != 0);
 
-console.log("Ha introducido un cero");
+console.log("Ha introducido un cero"); */
+
+//Pedir una contraseña hasta que sea correcta.
+// //Contar cuántos intentos necesitó el usuario para acertar una contraseña.
+let contraseña=parseInt(prompt("Inserte la contrasena"));;
+let intentos=0;
+
+do{
+
+ contraseña=parseInt(prompt("Repita nuevamente la contrasena"));
+  intentos++;
+}
+while (contraseña!=1234) 
+{
+   
+    console.log("Acceso concedido");
+}
+console.log(`el usuario ha fallado ${intentos} veces`);
+
