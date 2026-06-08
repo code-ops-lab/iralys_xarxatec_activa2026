@@ -27,7 +27,7 @@ while (numero < 10)
 
     // Mostrar los números pares del 1 al 20.
 
-  let numero=0;
+  /* let numero=0;
 while (numero < 20) 
     {
      numero++;
@@ -37,6 +37,15 @@ while (numero < 20)
      }
     
     
-} 
+}  */
 
-   
+   //Sumar los números del 1 al 50
+    let numero=0;
+   let suma=0;
+while (numero < 50) 
+    {
+        numero++;
+     suma+=numero;
+    }
+    console.log("la suma de los numeros es ", suma); 
+    
