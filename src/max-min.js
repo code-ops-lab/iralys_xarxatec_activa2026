@@ -6,48 +6,47 @@ almacenados en el vector*/
 
 
 
+function maximo(vector) {
 
-function maximo(vector) 
-{
+    let max = vector[0];
 
-    for (let i = 0; i < vector.length; i++)
-    
-   {
-    if (vector[i] > max) 
-        {
-        max = vector[i];
+    for (let i = 1; i < vector.length; i++) {
+
+        if (vector[i] > max) {
+            max = vector[i];
         }
-    
-   }
-   console.log("el maximo es :", max);
+    }
+
+    return max;
 }
 
+function minimo(vector) {
 
+    let min = vector[0];
+
+    for (let i = 1; i < vector.length; i++) {
+
+        if (vector[i] < min) {
+            min = vector[i];
+        }
+    }
+
+    return min;
+}
+
+function media(vector) {
+
+    let suma = 0;
+
+    for (let i = 0; i < vector.length; i++) {
+        suma += vector[i];
+    }
+
+    return (suma / vector.length).toFixed(2);
+}
 
 let vector = [2, 230, 45, 65, 100, 78];
 
-let max=vector[0];
-let min=vector[0];
-let media=0;
-let suma=0;
-
-maximo(vector);
-
-/*for (let i = 0; i < vector.length; i++)
-    
-{
-    if (vector[i] > max) {
-        max = vector[i];
-    }
-   if (vector[i]< min) {
-     min=vector[i];
-   }
-
-suma+=vector[i];
-
-
-}
-media=(suma/vector.length).toFixed(2);
-console.log("El máximo es:", max);
-console.log("El minimo es:", min);
-console.log("La media es:", media);*/
+console.log("Máximo:", maximo(vector));
+console.log("Mínimo:", minimo(vector));
+console.log("Media:", media(vector));
