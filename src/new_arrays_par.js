@@ -1,7 +1,20 @@
 
 const prompt = require('readline-sync').question;
-const numeros = [1,2,3,4,5,6,7,8,9,10];
+const numeros = ["hola",2,3,4,5,6,7,undefined,9,10,,NaN];
 const numeros_pares=[];
+
+//Validar que sea un array de numeros
+for (let i = 0; i < numeros.length; i++) {
+
+    if (typeof numeros[i] !== "number") {
+       numeros.splice(i,1); 
+    }
+    
+}
+console.log("array limpio",numeros);
+
+
+
 
 for (let i = 0; i < numeros.length; i++) {
 
