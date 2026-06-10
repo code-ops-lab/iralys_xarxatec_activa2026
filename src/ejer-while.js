@@ -62,18 +62,16 @@ console.log("Ha introducido un cero"); */
 
 //Pedir una contraseña hasta que sea correcta.
 // //Contar cuántos intentos necesitó el usuario para acertar una contraseña.
-let contraseña=parseInt(prompt("Inserte la contrasena"));;
-let intentos=0;
 
-do{
+let contraseña;
+let intentos = 0;
 
- contraseña=parseInt(prompt("Repita nuevamente la contrasena"));
-  intentos++;
-}
-while (contraseña!=1234) 
-{
-   
-    console.log("Acceso concedido");
-}
-console.log(`el usuario ha fallado ${intentos} veces`);
+do {
+    contraseña = prompt("Introduce la contrasena");
+    intentos++;
+} while (contraseña != "1234");
 
+console.log("Acceso concedido");
+console.log(`El usuario necesitó ${intentos} intentos`);
+
+//Generar un número aleatorio entre 1 y 10 y pedir al usuario que lo adivine.
