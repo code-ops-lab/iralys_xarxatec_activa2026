@@ -1,0 +1,271 @@
+=========================================
+EJERCICIO 1 (MEDIO-ALTO)
+=========================================
+
+Crear una función:
+
+numerosUnicos()
+
+Recibe un array de números.
+
+Debe devolver un nuevo array sin elementos repetidos.
+
+Ejemplo:
+
+[5, 3, 8, 5, 2, 3, 8]
+
+Resultado:
+
+[5, 3, 8, 2]
+
+Restricciones:
+
+- No usar Set()
+- No usar includes()
+- No usar indexOf()
+
+
+=========================================
+EJERCICIO 2 (MEDIO-ALTO)
+=========================================
+
+Crear una función:
+
+estaOrdenado()
+
+Recibe un array.
+
+Debe devolver:
+
+true  -> si está ordenado de menor a mayor
+false -> en caso contrario
+
+Ejemplos:
+
+[1,2,3,4,5] => true
+
+[1,2,8,4,5] => false
+
+
+=========================================
+EJERCICIO 3 (MEDIO-ALTO)
+=========================================
+
+Crear una función:
+
+rotarDerecha()
+
+Recibe:
+
+- un array
+- un número de posiciones
+
+Ejemplo:
+
+Array:
+[10,20,30,40,50]
+
+Posiciones:
+2
+
+Resultado:
+
+[40,50,10,20,30]
+
+No usar métodos avanzados.
+
+
+=========================================
+EJERCICIO 4 (EXAMEN REAL)
+=========================================
+
+Crear una función:
+
+frecuenciaMayor()
+
+Recibe un array.
+
+Debe devolver el número que más veces aparece.
+
+Ejemplo:
+
+[5,2,5,8,2,5,1]
+
+Resultado:
+
+5
+
+No usar objetos.
+
+
+=========================================
+EJERCICIO 5 (EXAMEN REAL)
+=========================================
+
+Crear una función:
+
+fusionarOrdenados()
+
+Recibe dos arrays ya ordenados.
+
+Ejemplo:
+
+[1,3,5,7]
+[2,4,6,8]
+
+Resultado:
+
+[1,2,3,4,5,6,7,8]
+
+No usar sort().
+
+
+=========================================
+EJERCICIO 6 (MEDIO-ALTO)
+=========================================
+
+Crear una función:
+
+buscarSubcadena()
+
+Recibe:
+
+- una cadena
+- una subcadena
+
+Debe devolver la posición donde comienza.
+
+Ejemplo:
+
+Texto:
+"javascript"
+
+Buscar:
+"script"
+
+Resultado:
+
+4
+
+No usar indexOf().
+
+
+=========================================
+EJERCICIO 7 (EXAMEN)
+=========================================
+
+Crear una función:
+
+esPalindromo()
+
+Debe determinar si una palabra se lee igual
+de izquierda a derecha que de derecha a izquierda.
+
+Ejemplos:
+
+"radar" => true
+"oso"   => true
+"casa"  => false
+
+No usar reverse().
+
+
+=========================================
+EJERCICIO 8 (EXAMEN)
+=========================================
+
+Crear una función:
+
+ordenarSeleccion()
+
+Ordenar un array de menor a mayor.
+
+No usar sort().
+
+Implementar manualmente el algoritmo.
+
+
+=========================================
+EJERCICIO 9 (EXAMEN)
+=========================================
+
+Crear una función:
+
+segundoMenor()
+
+Recibe un array.
+
+Debe devolver el segundo número más pequeño.
+
+Ejemplo:
+
+[8,4,2,10,6]
+
+Resultado:
+
+4
+
+No usar sort().
+
+
+=========================================
+EJERCICIO 10 (NIVEL ENTREVISTA JUNIOR)
+=========================================
+
+Crear una función:
+
+estadisticas()
+
+Recibe un array.
+
+Debe devolver:
+
+- mayor
+- menor
+- suma
+- media
+- cantidad de pares
+- cantidad de impares
+- cantidad de repetidos
+
+Todo en UNA SOLA RECORRIDA del array.
+
+No se permite recorrer el array varias veces.
+
+
+=========================================
+EJERCICIO 11 (DESAFÍO)
+=========================================
+
+Simular 10.000 lanzamientos de dos dados.
+
+Calcular:
+
+- media
+- suma más frecuente
+- suma menos frecuente
+
+Sin usar objetos.
+
+Solo arrays, funciones y bucles.
+
+
+=========================================
+EJERCICIO 12 (DESAFÍO ALGORÍTMICO)
+=========================================
+
+Crear una función:
+
+comprimir()
+
+Ejemplo:
+
+Entrada:
+
+"aaabbccccdd"
+
+Salida:
+
+"a3b2c4d2"
+
+No usar expresiones regulares.
