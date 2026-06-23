@@ -26,31 +26,26 @@ const prompt = require('readline-sync').question;
      return esigual;
  } */
 
- // version adaptada a como lo hace el profesor jjjj
+ // version adaptada a como lo hace el profesor 
 
- //let palabra="reconocer";
 function palindrome(palabra) {
 
-    let nuevapalabra=[];
-    let esigual=true;
+    let palabraInvertida = [];
 
-    /* const esNumero = (typeof palabra == "number");
-    if (esNumero) return "Error: introduce una palabra, no un número"; */
-
-    for (let i = palabra.length-1; i >= 0; i--) {
-       nuevapalabra.push(palabra[i]);
+    for (let i = palabra.length - 1; i >= 0; i--) {
+        palabraInvertida.push(palabra[i]);
     }
-    
 
-    for (let u = 0; u < palabra.length; u++) {
-        const sonDiferentes = (palabra[u] != nuevapalabra[u]);
-        
-        if (sonDiferentes) esigual = false;
+    for (let i = 0; i < palabra.length; i++) {
+
+        if (palabra[i] != palabraInvertida[i]) {
+            return false;
+        }
     }
-return esigual;    
+
+    return true;
 }
 
 console.log(palindrome(prompt("Entre la palabra: ")));
 
-/* let res=palindrome(palabra);
-console.log(res); */
+
