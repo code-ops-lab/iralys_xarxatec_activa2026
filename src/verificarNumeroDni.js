@@ -40,7 +40,7 @@ function validateDniNumber(number) {
 function calculateDNIletter(number, letter)
 {
   
-  let remainder= number % 23;
+  const remainder= number % 23;
   
   if (letter != lettersDNI[remainder]) return `DNI: ${number}\nLetra indicada: La letra ${letter} no es correcta\nResto de la división: ${remainder}\nLetra calculada: ${letter}` ;
   
