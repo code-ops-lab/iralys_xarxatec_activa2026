@@ -1,0 +1,19 @@
+#cuadrado {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+
+/* Clases que JavaScript añade al cuadrado */
+
+#cuadrado.rojo {
+    background-color: darkred;
+}
+
+#cuadrado.azul {
+    background-color: blue;
+}
+
+#cuadrado.rosa {
+    background-color: hotpink;
+}
